@@ -1,0 +1,382 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 994px) {
+    .form-control {
+    width: 350px;
+}
+}
+
+@media screen and (max-width: 994px) {
+    .navbar-nav {
+    text-align: center;
+}
+}
+    
+.main-color {
+    background-color: #F78C50 !important;
+}
+/*--- style css catalog --*/
+
+h2 {
+    font-size: 48px;
+    color: #363958;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #363958;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #363958;
+}
+
+
+.custom-navbar{
+    background-color: #f1f1f1;
+}
+
+.custom-ul{
+    text-align: center;
+    background-color: #fff;
+}
+
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.8) !important;
+}
+
+.custom-li{
+    font-weight: 700;
+    padding: 0px 25px;
+}
+
+.custom-highlight{
+    color: #dc3545;
+}
+
+.custom-btn{
+    background-color: #3d4ff3;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.custom-card{
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+.custom-img-width{
+    width: 80px;
+}
+
+.custom-service-card{
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+.custom-footer{
+    background-color: transparent;
+    border: none;
+}
+
+.custom-bg{
+    height: 350px;
+    background: #f1f1f1;
+    border-radius: 12px;
+}
+
+/* #side_nav{
+    background: black; 
+    
+    min-width: 250px;
+    max-width: 250px;
+} */
+
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/* .container{
+    display: flex;
+    min-height: 100vh;
+} */
+
+.Sidebar{
+    background-color:#F78C50;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    transition: all ease-in .3s;
+}
+
+.Sidebar.Hide {
+    min-width: 87px;;
+    transition: all ease-out .3s;
+}
+
+.Main-content{
+    background-color:aquamarine;
+   flex-grow: 1;
+}
+
+/* .NavBar{
+    background-color: blueviolet;
+    flex: auto;
+    flex-direction: row;
+
+}
+
+.Sidebar .Button{
+    display: inline-block;
+} */
+
+/* .Sidebar .Description-Header {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+
+    text-align: center;
+    color: black;
+    background-color: aqua;
+    
+    
+}
+
+.Sidebar.Hide .Description-Header{
+    display: none;
+} */
+
+
+.Sidebar a {
+    text-decoration: none;
+}
+
+.Sidebar .Header .List_Item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    /* background-color: antiquewhite; */
+    height: 40px;
+    box-sizing: border-box;
+   
+}
+
+
+
+.Sidebar .Header .List_Item .Icon{
+    margin-right: 12px;
+    margin-bottom: -5px;    
+    width: 30px;
+    height: 30px;
+}
+
+.Sidebar .Main .List_Item .Description {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: black;
+}
+
+.Sidebar.Hide .Main .List_Item .Description{
+    display: none;
+}
+
+.Sidebar .Main  .List_Item .Icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.Sidebar .Main{
+    margin-top: 50px;
+}
+
+.Sidebar .Main .List_Item {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+
+    /* width: 210px; */
+    box-sizing: border-box;
+    margin-top: 10px;
+  
+
+}
+
+
+
+.Sidebar .Main .List_Item:hover {
+    background:cornsilk;
+    transition: all ease-in .2s;
+}
+
+/* Toogle Menu*/
+#Menu-button{
+    width: 32px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#Menu-label{
+    position: relative;
+    display: block;
+    height: 20px;
+    cursor: pointer;
+}
+
+#Menu-checkbox{
+    display: none;
+}
+
+#Cube, #Menu-label::after, #Menu-label::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+#Menu-label::after, #Menu-label::before{
+    content: "";
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) left;
+}
+
+#Menu-label::before{
+    top: 0;
+}
+
+#Menu-label::after{
+    top: 8px;
+}
+
+#Cube{
+    top:16px;
+}
+
+#Cube::before{
+    content: "Menu";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#Menu-checkbox:checked + #Menu-label::before{
+    left: -39px;
+}
+
+#Menu-checkbox:checked + #Menu-label::after{
+    left: 39px;
+
+}
+
+#Menu-checkbox:checked + #Menu-label #Cube::before {
+    animation: moveUpThenDown 0.8s ease 0.2s forwards,
+    shakeUp 0.8s ease 0.2s forwards,
+    shakeDown 0.2s ease 0.8s forwards;
+}
+
+
+@keyframes moveUpThenDown {
+    0%{
+        top: 0;
+    }
+    50%{
+        top: -27px;
+    }
+    100%{
+        top: -14px;
+    }
+}
+
+@keyframes shakeUp {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    50%{
+        transform: rotateZ(0deg);
+    }
+    75%{
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes shakeDown {
+    0%{
+        transform: rotateZ(0);
+    }
+    80%{
+        transform: rotateZ(3deg);
+    }
+    90%{
+        transform: rotateZ(-3deg);
+    }
+    100%{
+        transform: rotateZ(0);
+    }
+}
+/* @media (max-width: 767px){
+    .Sidebar{
+        margin-left: -300px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+    .Sidebar.active{
+        margin-left: 0;
+    }
+} */
+
+.produk{
+    text-decoration: none;
+}
