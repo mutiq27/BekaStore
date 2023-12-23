@@ -25,16 +25,16 @@ BekaStore hadir sebagai solusi untuk mempermudah proses pertukaran barang bekas,
 <li>Berfungsi untuk menyimpan dan menampilkan barang-barang yang diunggah oleh seluruh pengguna dan masih memiliki status_barang 'Available'.
 <li>Memiliki kolom seperti id_barang (primary key), nama_barang, tanggal_upload, kategori, harga, Foto, Detail, dan status_barang. 
 <li>Terhubung dengan tabel Pengguna melalui kode_user.
-  
+  <br>
 2. Tabel Pengguna:
 <li>Berfungsi untuk menyimpan informasi nama-nama pengguna.
 <li>Memiliki kolom seperti id_user (primary_key), nama_user, email, password, no_tlp, alamat_user
 <li>Tabel ini memberikan identifikasi untuk setiap pengguna di dalam sistem.
-  
+  <br>
 3. Tabel Cart:
 <li>Berfungsi sebagai tempat penyimpanan dan tampilan barang-barang yang telah disimpan oleh pengguna lain dalam cart/keranjang mereka untuk pembelian.
 <li>Memiliki kolom seperti id_cart (primary), kode_pembeli (foreign key ke tabel pengguna), kode_barang (foreign key ke tabel Produk), dan status_barang.
-  
+  <br>
 4. Tabel Transaksi:
 <li>Mencatat informasi transaksi antara penjual dan pembeli.
 <li>Memiliki kolom seperti id_transaksi (primary key),id_penjual (foreign key ke tabel Pengguna), id_pembeli (foreign key ke tabel Pengguna), id_barangTerjual (foreignkey ke tabel Produk),  dan Tanggal_Transaksi
@@ -59,7 +59,7 @@ Struktur halaman web dibangun dengan menggunakan elemen HTML semantik untuk meni
 Untuk meningkatkan efisiensi dan responsivitas, kami menggunakan Bootstrap, yaitu framework front-end open source.
 Bootstrap membantu kami dengan komponen UI, grid system, dan gaya bawaan untuk mempercepat pembangunan tampilan depan.
 
-<li>Icon menggunakan FontAwesome:[fontawesome](https://fontawesome.com/)
+<li>Icon menggunakan FontAwesome:[FontAwesome](https://fontawesome.com/)
 
 Kami mengintegrasikan FontAwesome, toolkit ikon dan library dari internet, untuk menyertakan ikon-ikon yang diperlukan.
 Penggunaan kelas FontAwesome memungkinkan kami menyematkan ikon ke elemen-elemen HTML sesuai kebutuhan.
