@@ -59,7 +59,7 @@ Struktur halaman web dibangun dengan menggunakan elemen HTML semantik untuk meni
 Untuk meningkatkan efisiensi dan responsivitas, kami menggunakan Bootstrap, yaitu framework front-end open source.
 Bootstrap membantu kami dengan komponen UI, grid system, dan gaya bawaan untuk mempercepat pembangunan tampilan depan.
 
-<li>Icon menggunakan FontAwesome:[FontAwesome](https://fontawesome.com/)
+<li>Icon menggunakan [FontAwesome](https://fontawesome.com/) :
 
 Kami mengintegrasikan FontAwesome, toolkit ikon dan library dari internet, untuk menyertakan ikon-ikon yang diperlukan.
 Penggunaan kelas FontAwesome memungkinkan kami menyematkan ikon ke elemen-elemen HTML sesuai kebutuhan.
