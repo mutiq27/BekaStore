@@ -22,24 +22,44 @@ BekaStore hadir sebagai solusi untuk mempermudah proses pertukaran barang bekas,
 
 <h3> Database </h3>
 1. Tabel Produk:
-<li>Berfungsi untuk menyimpan dan menampilkan barang-barang yang diunggah oleh seluruh pengguna.
-<li>Memiliki kolom seperti Produk_ID (identifikasi unik), Nama_Produk, Deskripsi, Harga, dan Status yang menunjukkan ketersediaan produk (contoh: 'Tersedia').
-Terhubung dengan tabel Pengguna melalui Pengguna_ID.
-Tabel Pengguna:
-
-Berfungsi untuk menyimpan informasi nama-nama pengguna.
-Memiliki kolom seperti Pengguna_ID (identifikasi unik) dan Nama_Pengguna.
-Tabel ini memberikan identifikasi untuk setiap pengguna di dalam sistem.
-Tabel Cart:
-
-Berfungsi sebagai tempat penyimpanan dan tampilan barang-barang yang telah disimpan oleh pengguna lain dalam cart/keranjang mereka untuk pembelian.
-Memiliki kolom seperti Keranjang_ID (identifikasi unik), Pengguna_ID (kunci asing ke tabel Pengguna), Produk_ID (kunci asing ke tabel Produk), dan Jumlah (jumlah barang dalam keranjang).
-Tabel Transaksi:
-
-Mencatat informasi transaksi antara penjual dan pembeli.
-Memiliki kolom seperti Transaksi_ID (identifikasi unik), Pembeli_ID (kunci asing ke tabel Pengguna), Penjual_ID (kunci asing ke tabel Pengguna), Produk_ID (kunci asing ke tabel Produk), Jumlah (jumlah barang yang dibeli), Total_Harga, dan Tanggal_Transaksi
-
-
+<li>Berfungsi untuk menyimpan dan menampilkan barang-barang yang diunggah oleh seluruh pengguna dan masih memiliki status_barang 'Available'.
+<li>Memiliki kolom seperti id_barang (primary key), nama_barang, tanggal_upload, kategori, harga, Foto, Detail, dan status_barang. 
+<li>Terhubung dengan tabel Pengguna melalui kode_user.
+  
+2. Tabel Pengguna:
+<li>Berfungsi untuk menyimpan informasi nama-nama pengguna.
+<li>Memiliki kolom seperti id_user (primary_key), nama_user, email, password, no_tlp, alamat_user
+<li>Tabel ini memberikan identifikasi untuk setiap pengguna di dalam sistem.
+  
+3. Tabel Cart:
+<li>Berfungsi sebagai tempat penyimpanan dan tampilan barang-barang yang telah disimpan oleh pengguna lain dalam cart/keranjang mereka untuk pembelian.
+<li>Memiliki kolom seperti id_cart (primary), kode_pembeli (foreign key ke tabel pengguna), kode_barang (foreign key ke tabel Produk), dan status_barang.
+  
+4. Tabel Transaksi:
+<li>Mencatat informasi transaksi antara penjual dan pembeli.
+<li>Memiliki kolom seperti id_transaksi (primary key),id_penjual (foreign key ke tabel Pengguna), id_pembeli (foreign key ke tabel Pengguna), id_barangTerjual (foreignkey ke tabel Produk),  dan Tanggal_Transaksi
 
 
+<h3> Front End </h3>
 
+Dalam pengembangan tampilan depan platform website yang kami buat, kami mengadopsi pendekatan berikut:
+
+<li>Desain Awal menggunakan Figma:
+
+Kami memulai proses dengan membuat mockup dan desain awal menggunakan Figma.
+Desain ini mencakup tata letak, elemen-elemen, dan estetika keseluruhan platform.
+
+<li>Implementasi HTML dan CSS:
+
+Setelah mockup selesai, kami mentranslasikannya ke dalam kode menggunakan HTML dan CSS.
+Struktur halaman web dibangun dengan menggunakan elemen HTML semantik untuk meningkatkan aksesibilitas dan SEO.
+
+<li>Memanfaatkan Bootstrap Framework:['Bootsrap'](https://getbootstrap.com/)
+
+Untuk meningkatkan efisiensi dan responsivitas, kami menggunakan Bootstrap, yaitu framework front-end open source.
+Bootstrap membantu kami dengan komponen UI, grid system, dan gaya bawaan untuk mempercepat pembangunan tampilan depan.
+
+<li>Icon menggunakan FontAwesome:['fontawesome'](https://fontawesome.com/)
+
+Kami mengintegrasikan FontAwesome, toolkit ikon dan library dari internet, untuk menyertakan ikon-ikon yang diperlukan.
+Penggunaan kelas FontAwesome memungkinkan kami menyematkan ikon ke elemen-elemen HTML sesuai kebutuhan.
