@@ -22,8 +22,8 @@ BekaStore hadir sebagai solusi untuk mempermudah proses pertukaran barang bekas,
 
 <h3> Database </h3>
 1. Tabel Produk:
-- Berfungsi untuk menyimpan dan menampilkan barang-barang yang diunggah oleh seluruh pengguna.
-Memiliki kolom seperti Produk_ID (identifikasi unik), Nama_Produk, Deskripsi, Harga, dan Status yang menunjukkan ketersediaan produk (contoh: 'Tersedia').
+<li>Berfungsi untuk menyimpan dan menampilkan barang-barang yang diunggah oleh seluruh pengguna.
+<li>Memiliki kolom seperti Produk_ID (identifikasi unik), Nama_Produk, Deskripsi, Harga, dan Status yang menunjukkan ketersediaan produk (contoh: 'Tersedia').
 Terhubung dengan tabel Pengguna melalui Pengguna_ID.
 Tabel Pengguna:
 
